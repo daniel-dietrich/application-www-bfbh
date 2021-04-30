@@ -1,6 +1,6 @@
 # BeFitBeHealthy
 
-### Aplikacja www odpowiedzialna za dobór odpowiedniej diety oraz treningu dla użytkowników.
+#### Aplikacja www odpowiedzialna za dobór odpowiedniej diety oraz treningu dla użytkowników.
 
 ---
 Aplikacja została zaprojektowana w pełni na architekturze **MVC**.
