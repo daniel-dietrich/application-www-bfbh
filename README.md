@@ -3,8 +3,8 @@
 ### Aplikacja www odpowiedzialna za dobór odpowiedniej diety oraz treningu dla użytkowników.
 
 ---
-Strona została zaprojektowana w pełni na architekturze **MVC**.
-Część wizualna aplikacji została zbudowana na frameworku [Bulma](http://bulma.io).
+Aplikacja została zaprojektowana w pełni na architekturze **MVC**.
+Część wizualna strony bazuje na frameworku [Bulma](http://bulma.io).
 Aplikacja wykorzystuje parę autorskich skryptów *javascript* które są odpowiedzialne m.in. za wyświetlanie okienek rejestracji i logowania oraz odpowiedniego dnia treningu/diety na stronie użytkownika.
 
 Dobór odpowiedniej diety wraz z treningiem jest automatycznie podejmowany przez serwer na podstawie danych wprowadzonych przez użytkownika przy rejestracji.
