@@ -8,6 +8,7 @@ Aplikacja wykorzystuje parę autorskich skryptów *javascript* które są odpowi
 
 Dobór odpowiedniej diety wraz z treningiem jest automatycznie podejmowany przez serwer na podstawie danych wprowadzonych przez użytkownika przy rejestracji.
 Zalogowani użytkownicy otrzymują dostęp do spersonalizowanej strony użytkownika zawierającej następujące informacje:
+* imię i nazwisko osoby
 * bieżące bmi
 * ocena bieżącego bmi
 * plan treningu na aktualny tydzień
