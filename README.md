@@ -1,7 +1,8 @@
 # BeFitBeHealthy
 
-Aplikacja www odpowiedzialna za dobór odpowiedniej diety oraz treningu dla użytkowników.
+### Aplikacja www odpowiedzialna za dobór odpowiedniej diety oraz treningu dla użytkowników.
 
+---
 Strona została zaprojektowana w pełni na architekturze **MVC**.
 Część wizualna aplikacji została zbudowana na frameworku [Bulma](http://bulma.io).
 Aplikacja wykorzystuje parę autorskich skryptów *javascript* które są odpowiedzialne m.in. za wyświetlanie okienek rejestracji i logowania oraz odpowiedniego dnia treningu/diety na stronie użytkownika.
