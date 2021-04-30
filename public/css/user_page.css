@@ -1,0 +1,151 @@
+:root {
+    --main_color: #163172;
+    --main_color_hover: #1e56a0;
+    --back_color: #ffffff;
+    --back_gradient: linear-gradient(to top, var(--main_color), var(--main_color_hover));
+    --over_gradient: linear-gradient(to top, var(--main_color), transparent);
+    --box-shadow: 0 0.15em 0.25em 0.15em rgba(0, 0, 0, 0.2);
+    --box-corner-radius: 0.5em;
+    --animation-time: 0.4s;
+    --dim_background: rgba(0, 0, 0, 0.3);
+}
+
+html {
+    user-select: none;
+    scroll-behavior: smooth;
+}
+
+* {
+    font-family: 'Barlow', sans-serif;
+}
+
+body {
+    background: url("../img/bg_main.png") center bottom no-repeat fixed #fff;
+
+}
+
+.fixed-table {
+    table-layout: fixed;
+    background-color: transparent;
+}
+
+.fixed-table * {
+    color: white;
+}
+
+.vertical-align {
+    vertical-align: middle;
+}
+
+.diet-tab-content, .day-tab-content {
+    display: none;
+}
+
+.is-active {
+    font-weight: bold;
+}
+
+li > a {
+    background-color: white;
+}
+
+.rounded {
+    border-radius: var(--box-corner-radius);
+}
+
+.is-selected {
+    background-color: var(--main_color) !important;
+}
+
+.progress.is-link::-webkit-progress-value {
+    background-color: var(--main_color) !important;
+}
+
+.no-background-color {
+    background-color: transparent !important;
+}
+
+.is-selected * {
+    color: white !important;
+}
+
+.white-text {
+    color: #FFF;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.limit-padding {
+    margin-right: 0.05em;
+    margin-left: 0.05em;
+}
+
+.navbar {
+    position: sticky;
+    z-index: 1;
+    top: 0;
+    transition: top var(--animation-time);
+}
+
+.navbar-item:hover {
+    color: var(--main_color) !important;
+}
+
+.button.is-primary {
+    background-color: var(--main_color) !important;
+}
+
+.button.is-primary:hover {
+    background-color: var(--main_color_hover);
+}
+
+.is-primary:hover {
+    background-color: var(--main_color_hover) !important;
+}
+
+.shadow {
+    box-shadow: var(--box-shadow);
+}
+
+.text-section {
+    background: var(--back_gradient);
+    border-radius: var(--box-corner-radius);
+}
+
+.footer {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.icon-social {
+    color: var(--back_color);
+}
+
+#top-section {
+    background-color: var(--main_color);
+}
+
+.avatar {
+    border-radius: var(--box-corner-radius);
+}
+
+@keyframes fade_in {
+    from {
+        top: -1.5em;
+        opacity: 0;
+    }
+    to {
+        top: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes fade_in_bg {
+    from {
+        background-color: transparent;
+    }
+    to {
+        background-color: var(--dim_background);
+    }
+}

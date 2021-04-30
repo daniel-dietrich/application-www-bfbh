@@ -1,0 +1,189 @@
+:root {
+    --main_color: #163172;
+    --main_color_hover: #1e56a0;
+    --back_color: #ffffff;
+    --back_gradient: linear-gradient(to top, var(--main_color), var(--main_color_hover));
+    --over_gradient: linear-gradient(to top, var(--main_color), transparent);
+    --box-shadow: 0 0.15em 0.25em 0.15em rgba(0, 0, 0, 0.2);
+    --box-corner-radius: 0.5em;
+    --animation-time: 0.4s;
+    --dim_background: rgba(0, 0, 0, 0.3);
+}
+
+html {
+    user-select: none;
+    scroll-behavior: smooth;
+}
+
+* {
+    font-family: 'Barlow', sans-serif;
+}
+
+body {
+    background: url("../img/bg_main.png") center bottom no-repeat fixed #fff;
+
+}
+
+.notification {
+    margin-top: 2%;
+    padding: 2%;
+}
+
+.vertical-align {
+    vertical-align: middle;
+}
+
+.white-text, .label {
+    color: #FFF;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.shadow {
+    box-shadow: var(--box-shadow);
+}
+
+.align-left {
+    text-align: left;
+}
+
+.contact-box {
+    background-color: var(--main_color);
+}
+
+.navbar {
+    position: sticky;
+    z-index: 1;
+    top: 0;
+    transition: top var(--animation-time); /* Transition effect when sliding down (and up) */
+}
+
+.navbar-item:hover {
+    color: var(--main_color) !important;
+}
+
+.button.is-primary {
+    background-color: var(--main_color) !important;
+}
+
+.button.is-primary:hover {
+    background-color: var(--main_color_hover);
+}
+
+.banner {
+    width: 75%;
+    display: block;
+    margin: auto;
+}
+
+.is-primary:hover {
+    background-color: var(--main_color_hover) !important;
+}
+
+.text-section {
+    background: var(--back_gradient);
+    border-radius: var(--box-corner-radius);
+    margin-bottom: 3em;
+}
+
+.card-box {
+    background: var(--back_color);
+    border-radius: var(--box-corner-radius);
+    box-shadow: var(--box-shadow);
+    transition: transform var(--animation-time);
+}
+
+.card-box:hover {
+    transform: translateY(-0.5em);
+}
+
+.card-box .image-card {
+    opacity: 65%;
+    width: 15%;
+}
+
+.footer {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.fitness-background {
+    background-image: var(--over_gradient), url("../img/img_fitness.jpg");
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+    height: 20em;
+    border-radius: var(--box-corner-radius);
+}
+
+.food-background {
+    background-image: var(--over_gradient), url("../img/img_food.jpg");
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+    height: 20em;
+    border-radius: var(--box-corner-radius);
+}
+
+.icon-social {
+    color: var(--back_color);
+}
+
+.login-popup, .register-popup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: var(--dim_background);
+    animation-name: fade_in_bg;
+    animation-duration: var(--animation-time);
+}
+
+.login-content, .register-content {
+    border-radius: var(--box-corner-radius);
+    background-color: var(--back_color);
+    position: relative;
+    margin-top: 15%;
+    left: 50%;
+    transform: translate(-50%, -25%);
+    max-width: 25%;
+    animation-name: fade_in;
+    animation-duration: var(--animation-time);
+}
+
+.close-login, .close-register {
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-login:hover, .close-login:focus, .close-register:hover, .close-register:focus {
+    cursor: pointer;
+}
+
+@keyframes fade_in {
+    from {
+        top: -1.5em;
+        opacity: 0;
+    }
+    to {
+        top: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes fade_in_bg {
+    from {
+        background-color: transparent;
+    }
+    to {
+        background-color: var(--dim_background);
+    }
+}
